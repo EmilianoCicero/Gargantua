@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import Button from './components/Button';
 import Container from './layouts/Container';
-import './styles/tokens.css';
 import Card from './components/Card';
+import './styles/tokens.css';
 
 function App() {
   const [theme, setTheme] = useState('light');
