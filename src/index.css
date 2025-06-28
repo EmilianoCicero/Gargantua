@@ -17,8 +17,8 @@ html, body {
   overflow-x: hidden;
 }
 html {
-  color: var(--color-text);
-  background-color: var(--color-mainbg);
+  color: red;
+  background-color: red!important;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
 
