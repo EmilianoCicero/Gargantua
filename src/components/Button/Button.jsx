@@ -1,11 +1,11 @@
 import React from 'react';
 import './Button.css';
 
-const Button = ({ children, variant = 'primary', disabled = false, ...props }) => {
-  const className = `btn ${variant} ${disabled ? 'disabled' : ''}`;
+const Button = ({ children, variant = 'primary', disabled = false, fullWidth = false, ...props }) => {
+  const className = `btn ${variant} ${disabled ? 'disabled' : ''} ${fullWidth ? 'full-width' : ''}`;
 
   return (
-    <button type="button" className={className} disabled={disabled} {...props}>
+    <button className={className} disabled={disabled} {...props}>
       {children}
     </button>
   );

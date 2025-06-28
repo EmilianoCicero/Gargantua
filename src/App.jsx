@@ -17,7 +17,7 @@ function App() {
 
   return (
     <>
-      <Button variant="secondary" onClick={toggleTheme}>Change Theme</Button>
+      <Button variant="tertiary" onClick={toggleTheme}>Change Theme</Button>
       <Container>
         <h1>Welcome to Gargantua</h1>
         <p>

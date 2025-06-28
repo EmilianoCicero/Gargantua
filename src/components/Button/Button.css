@@ -16,7 +16,6 @@
     box-shadow: var(--elevation-primary-md);
   }
   .btn.primary:focus {
-    /*background-color: #144FFF;*/
     box-shadow: var(--elevation-primary-md);
   }
   .btn.disabled.primary:hover {
@@ -92,3 +91,6 @@
     cursor: not-allowed;
     box-shadow: none;
 }
+.btn.full-width {
+    width: 100%;
+  }
