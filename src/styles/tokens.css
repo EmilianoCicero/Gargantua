@@ -1,5 +1,4 @@
 :root {
-    
     /* Primitives */
     --blue300: #0033CC;
     --blue400: #0039E5;
@@ -8,6 +7,64 @@
     --blue700: #3366FF;
 
     --white: #fff;
+    --black: #121212;
+
+    --transparent000: rgba(0, 0, 0, 0);
+    --transparent100:rgba(0, 0, 0, 0.05);
+    --transparent200: rgba(0, 0, 0, 0.1);
+    --transparent300: rgba(0, 0, 0, 0.15);
+    --transparent400: rgba(0,0,0, 0.6);
+
+    /* Colors */
+    --color-mainbg: var(--white);
+    --color-text: var(--black);
+
+    --color-primary: var(--blue500);
+    --color-primary-hover: var(--blue600);
+    --color-primary-fg: var(--white);
+    --color-primary-hover-fg: var(--white);
+
+    --color-secondary: var(--transparent100);
+    --color-secondary-hover: var(--transparent200);
+    --color-secondary-fg: var(--black);
+    --color-secondary-hover-fg: var(--black);
+
+    --color-tertiary: var(--transparent000);
+    --color-tertiary-hover: var(--transparent100);
+    --color-tertiary-fg: var(--transparent400);
+    --color-tertiary-hover-fg: var(--black);
+
+    --color-transparent: var(--transparent000);
+    --color-transparent-hover: var(--transparent100);
+    --color-transparent-fg: var(--transparent400);
+    --color-transparent-hover-fg: var(--black);
+
+    /* Border Radius */
+    --radius-sm: 4px;
+    --radius-md: 8px;
+    --radius-lg: 16px;
+    
+    /* Spacing */
+    --space-xs: 4px;
+    --space-sm: 8px;
+    --space-md: 16px;
+    --space-lg: 24px;
+    --space-xl: 32px;
+    
+    /* Typography */
+    --font-base: 'DM Sans', sans-serif;
+    --font-heading: 'Playfair Display', serif;
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.25rem;
+    --font-size-xl: 2rem;
+
+    /* Elevation */
+    --elevation-primary-md: 0 8px 20px 4px rgba(0, 56, 224, 0.24);
+    --elevation-md: 0 8px 20px 4px rgba(0, 0, 0, 0.05);
+}
+
+[data-theme="dark"] { /* Dark Mode */
     --transparent000: rgba(255, 255, 255, 0);
     --transparent100:rgba(255, 255, 255, 0.05);
     --transparent200: rgba(255, 255, 255, 0.1);
@@ -15,11 +72,8 @@
     --transparent400: rgba(255,255,255, 0.6);
    
     /* Colors */
-    
-    --color-primary: var(--blue500);
-    --color-primary-hover: var(--blue600);
-    --color-primary-fg: var(--white);
-    --color-primary-hover-fg: var(--white);
+    --color-mainbg: #121212;
+    --color-text: var(--white);
   
     --color-secondary: var(--transparent100);
     --color-secondary-hover: var(--transparent200);
@@ -35,32 +89,7 @@
     --color-transparent-hover: var(--transparent100);
     --color-transparent-fg: var(--transparent400);
     --color-transparent-hover-fg: var(--white);
-  
-    --color-border: #e0e0e0;
-    --color-background: var(--white);
-    --color-text: #111111;
-  
-    /* Border Radius */
-    --radius-sm: 4px;
-    --radius-md: 8px;
-    --radius-lg: 16px;
-  
-    /* Spacing */
-    --space-xs: 4px;
-    --space-sm: 8px;
-    --space-md: 16px;
-    --space-lg: 24px;
-    --space-xl: 32px;
-  
-    /* Typography */
-    --font-base: 'DM Sans', sans-serif;
-    --font-heading: 'Playfair Display', serif;
-    --font-size-sm: 0.875rem;
-    --font-size-md: 1rem;
-    --font-size-lg: 1.25rem;
-    --font-size-xl: 2rem;
-  
+
     /* Elevation */
-    --elevation-primary-md: 0 8px 20px 4px rgba(0, 56, 224, 0.24);
     --elevation-md: 0 8px 20px 4px rgba(255, 255, 255, 0.05);
   }
