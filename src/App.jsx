@@ -1,35 +1,24 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import Button from './components/Button';
+import './styles/tokens.css';
 
-function App() {
-  const [count, setCount] = useState(0)
+import Container from './layouts/Container';
 
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <Container>
+      <h1>Welcome to Gargantua</h1>
+      <p>Imagine you could take that component back in time to a team member. Well that's almost impossible, but we're here so next time you won't need time traveling.</p>
+      <Button variant="primary">Click me</Button>
+      <Button variant="secondary">Click me</Button>
+      <Button variant="tertiary">Click me</Button>
+      <Button variant="transparent">Click me</Button>
+      <Button variant="primary" disabled>Click me</Button>
+      <Button variant="secondary" disabled>Click me</Button>
+      <Button variant="tertiary" disabled>Click me</Button>
+      <Button variant="transparent" disabled>Click me</Button>
+    </Container>
+  );
+};
 
-export default App
+export default App;

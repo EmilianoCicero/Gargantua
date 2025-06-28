@@ -1,0 +1,94 @@
+.btn {
+    padding: 0.6rem 1.2rem;
+    border-radius: var(--radius-md);
+    font-size: var(--font-size-md);
+    cursor: pointer;
+    overflow: visible;
+    transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+.btn.primary {
+    background-color: var(--color-primary);
+    color: var(--color-primary-fg);
+    border: none;
+  }
+  .btn.primary:hover {
+    background-color: var(--color-primary-hover);
+    box-shadow: 0 8px 20px 4px rgba(0, 56, 224, 0.24);
+  }
+  .btn.primary:focus {
+    /*background-color: #144FFF;*/
+    box-shadow: 0 8px 20px 4px rgba(0, 56, 224, 0.24);
+  }
+  .btn.disabled.primary:hover {
+    color: var(--color-primary-fg);
+    background-color: var(--color-primary);
+    box-shadow: none;
+  }
+
+.btn.secondary {
+    background-color: var(--color-secondary);
+    color: var(--color-secondary-fg);
+    border: none;
+  }
+  
+  .btn.secondary:hover {
+    background-color: var(--color-secondary-hover);
+    box-shadow: 0 8px 20px 4px rgba(255, 255, 255, 0.05);
+  }
+  
+  .btn.secondary:focus {
+    box-shadow: 0 8px 20px 4px rgba(255, 255, 255, 0.05);
+  }
+  .btn.disabled.secondary:hover {
+    color: var(--color-secondary-fg);
+    background-color: var(--color-secondary);
+    box-shadow: none;
+  }
+
+.btn.tertiary {
+    background-color: var(--color-tertiary);
+    color: var(--color-tertiary-fg);
+    border: 1px solid var(--transparent300);
+  }
+
+    .btn.tertiary:hover {
+        color: var(--color-tertiary-hover-fg);
+        background-color: var(--color-tertiary-hover);
+        box-shadow: 0 8px 20px 4px rgba(255, 255, 255, 0.03);
+    }
+
+    .btn.tertiary:focus {   
+        box-shadow: 0 8px 20px 4px rgba(255, 255, 255, 0.05);
+    }
+    .btn.disabled.tertiary:hover {
+        color: var(--color-tertiary-fg);
+        background-color: var(--color-tertiary);
+        box-shadow: none;
+    }
+
+.btn.transparent {
+    background-color: var(--color-transparent);
+    color: var(--color-transparent-fg);
+    border: none;
+  }
+  
+  .btn.transparent:hover {
+    color: var(--color-transparent-hover-fg);
+    background-color: var(--color-transparent-hover);
+    box-shadow: 0 8px 20px 4px rgba(255, 255, 255, 0.03);
+  }
+  .btn.disabled.transparent:hover {
+    color: var(--color-transparent-fg);
+    background-color: transparent;
+    box-shadow: none;
+  }
+  
+  .btn.transparent:focus {
+    box-shadow: 0 8px 20px 4px rgba(255, 255, 255, 0.05);
+  }
+
+.btn.disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+    box-shadow: none;
+}
