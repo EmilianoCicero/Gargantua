@@ -21,7 +21,7 @@ function App() {
       <Container>
         <h1>Welcome to Gargantua</h1>
         <p>
-          Imagine you could take that component back in time to a team member. Well that's almost impossible, but we're here so next time you won't need time traveling.
+        Bend time and space with Gargantua. Build faster. Launch sooner. Reach further.
         </p>
         <Button variant="primary">Click me</Button>
         <Button variant="secondary">Click me</Button>

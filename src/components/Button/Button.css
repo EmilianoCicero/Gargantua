@@ -58,7 +58,7 @@
     }
 
     .btn.tertiary:focus {   
-        box-shadow:  var(--elevation-md);
+        box-shadow: var(--elevation-md);
     }
     .btn.disabled.tertiary:hover {
         color: var(--color-tertiary-fg);
