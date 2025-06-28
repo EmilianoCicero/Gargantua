@@ -13,11 +13,11 @@
   }
   .btn.primary:hover {
     background-color: var(--color-primary-hover);
-    box-shadow: 0 8px 20px 4px rgba(0, 56, 224, 0.24);
+    box-shadow: var(--elevation-primary-md);
   }
   .btn.primary:focus {
     /*background-color: #144FFF;*/
-    box-shadow: 0 8px 20px 4px rgba(0, 56, 224, 0.24);
+    box-shadow: var(--elevation-primary-md);
   }
   .btn.disabled.primary:hover {
     color: var(--color-primary-fg);
@@ -33,11 +33,11 @@
   
   .btn.secondary:hover {
     background-color: var(--color-secondary-hover);
-    box-shadow: 0 8px 20px 4px rgba(255, 255, 255, 0.05);
+    box-shadow: var(--elevation-md);
   }
   
   .btn.secondary:focus {
-    box-shadow: 0 8px 20px 4px rgba(255, 255, 255, 0.05);
+    box-shadow: var(--elevation-md);
   }
   .btn.disabled.secondary:hover {
     color: var(--color-secondary-fg);
@@ -54,11 +54,11 @@
     .btn.tertiary:hover {
         color: var(--color-tertiary-hover-fg);
         background-color: var(--color-tertiary-hover);
-        box-shadow: 0 8px 20px 4px rgba(255, 255, 255, 0.03);
+        box-shadow: var(--elevation-md);
     }
 
     .btn.tertiary:focus {   
-        box-shadow: 0 8px 20px 4px rgba(255, 255, 255, 0.05);
+        box-shadow:  var(--elevation-md);
     }
     .btn.disabled.tertiary:hover {
         color: var(--color-tertiary-fg);
@@ -75,7 +75,7 @@
   .btn.transparent:hover {
     color: var(--color-transparent-hover-fg);
     background-color: var(--color-transparent-hover);
-    box-shadow: 0 8px 20px 4px rgba(255, 255, 255, 0.03);
+    box-shadow: var(--elevation-md);
   }
   .btn.disabled.transparent:hover {
     color: var(--color-transparent-fg);
@@ -84,7 +84,7 @@
   }
   
   .btn.transparent:focus {
-    box-shadow: 0 8px 20px 4px rgba(255, 255, 255, 0.05);
+    box-shadow: var(--elevation-md);
   }
 
 .btn.disabled {
