@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Button from './components/Button';
 import Container from './layouts/Container';
 import './styles/tokens.css';
+import Card from './components/Card';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -19,18 +20,9 @@ function App() {
     <>
       <Button variant="tertiary" onClick={toggleTheme}>Change Theme</Button>
       <Container>
-        <h1>Welcome to Gargantua</h1>
-        <p>
-        Bend time and space with Gargantua. Build faster. Launch sooner. Reach further.
-        </p>
-        <Button variant="primary">Click me</Button>
-        <Button variant="secondary">Click me</Button>
-        <Button variant="tertiary">Click me</Button>
-        <Button variant="transparent">Click me</Button>
-        <Button variant="primary" disabled>Click me</Button>
-        <Button variant="secondary" disabled>Click me</Button>
-        <Button variant="tertiary" disabled>Click me</Button>
-        <Button variant="transparent" disabled>Click me</Button>
+      <Card title="Card Title">
+        <p>This is a reusable Card component. Great for grouping content!</p>
+      </Card>
       </Container>
     </>
   );

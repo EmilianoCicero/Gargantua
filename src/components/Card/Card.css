@@ -1,0 +1,24 @@
+.card {
+    background-color: var(--color-secondary);
+    border: 1px solid var(--color-secondary);
+    border-radius: var(--radius-lg);
+    padding: var(--space-lg);
+    box-shadow: var(--elevation-sm);
+    transition: box-shadow 0.2s ease-in-out;
+  }
+  
+  .card:hover {
+    box-shadow: var(--elevation-md);
+  }
+  
+  .card-title {
+    font-family: var(--font-heading);
+    font-size: var(--font-size-lg);
+    margin-bottom: var(--space-sm);
+  }
+  
+  .card-content {
+    font-family: var(--font-base);
+    font-size: var(--font-size-md);
+    color: var(--color-text);
+  }

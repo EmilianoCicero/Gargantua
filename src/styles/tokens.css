@@ -53,7 +53,7 @@
     
     /* Typography */
     --font-base: 'DM Sans', sans-serif;
-    --font-heading: 'Playfair Display', serif;
+    --font-heading: 'DM Sans', sans-serif;
     --font-size-sm: 0.875rem;
     --font-size-md: 1rem;
     --font-size-lg: 1.25rem;
@@ -64,7 +64,7 @@
     --elevation-md: 0 8px 20px 4px rgba(0, 0, 0, 0.05);
 }
 
-[data-theme="dark"] { /* Dark Mode */
+[data-theme="dark"] { /* Dark Theme */
     --transparent000: rgba(255, 255, 255, 0);
     --transparent100:rgba(255, 255, 255, 0.05);
     --transparent200: rgba(255, 255, 255, 0.1);
@@ -72,7 +72,7 @@
     --transparent400: rgba(255,255,255, 0.6);
    
     /* Colors */
-    --color-mainbg: #121212;
+    --color-mainbg: var(--black);
     --color-text: var(--white);
   
     --color-secondary: var(--transparent100);
