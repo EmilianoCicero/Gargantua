@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import Button from './components/Button';
 import Container from './layouts/Container';
 import Card from './components/Card';
+import useFeather from './hooks/useFeatherIcons';
 import './styles/tokens.css';
 
 function App() {
@@ -12,17 +13,39 @@ function App() {
     document.documentElement.setAttribute('data-theme', theme);
   }, [theme]);
 
+  useFeather();
+
   const toggleTheme = () => {
     setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
   };
 
   return (
     <>
-      <Button variant="tertiary" onClick={toggleTheme}>Change Theme</Button>
+      <Button variant="transparent" onClick={toggleTheme}>Change Theme</Button>
       <Container>
-      <Card title="Card Title">
-        <p>This is a reusable Card component. Great for grouping content!</p>
+      <h1>Welcome to Gargantua</h1>
+      <p>Bend time and space with Gargantua. Build faster. Launch sooner. Reach Further.</p>
+      <Card
+  image="https://images.unsplash.com/photo-1750688651440-6e485ae16bc8?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+/>
+      <Card title="Explore the Universe" paragraph="Discover the vastness of space with our cutting-edge tools and resources."
+   image="https://images.unsplash.com/photo-1743756618181-99a77edf8eab?q=80&w=3270&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+>
+<Button variant="transparent"><i data-feather="feather"></i></Button>
+<Button variant="transparent"><i data-feather="smile"></i></Button>
+<Button variant="transparent"><i data-feather="camera"></i></Button>
+<Button variant="transparent"><i data-feather="more-vertical"></i></Button>
       </Card>
+      <Button variant="primary">Primary Garg</Button>
+      <Button variant="primary"><i data-feather="feather"></i>Primary Garg<i data-feather="smile"></i></Button>
+      <Button variant="primary"><i data-feather="feather"></i></Button>
+      <i data-feather="feather"></i>
+      <i data-feather="camera"></i>
+      <i data-feather="smile"></i>
+      <i data-feather="home"></i>
+      <Button variant="secondary">Secondary</Button>
+      <Button variant="tertiary"><i data-feather="home"></i>Tertiary</Button>
+      <Button variant="transparent"><i data-feather="home"></i>Transparent</Button>
       </Container>
     </>
   );

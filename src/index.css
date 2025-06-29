@@ -1,8 +1,4 @@
 :root {
-  font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
-
   color-scheme: light dark;
 
   font-synthesis: none;
@@ -12,16 +8,34 @@
 }
 
 html, body {
+  font-family: var(--GT-font-family-base);
+  font-family: var(--GT-font-family-base);
+  line-height: var(--GT-line-height-normal);
+  font-size: var(--GT-font-size-md);
+  color: var(--GT-color-text-main);
+  font-weight: var(--GT-font-weight-medium);
   min-height: 100vh;
   margin: 0;
   overflow-x: hidden;
 }
 html {
-  color: red;
-  background-color: red!important;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  background-color: var(--GT-color-bg-layout-main);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 h1 {
-  font-family: var(--font-heading);
+  color: var(--GT-color-text-main);
+  font-family: var(--GT-font-family-heading);
+  font-size: var(--GT-font-size-xxl);
+  font-weight: var(--GT-font-weight-regular);
+  line-height: var(--GT-line-height-tight);
+  margin: 0;
+}
+p {
+  color: var(--GT-color-text-secondary);
+  font-family: var(--GT-font-family-base);
+  font-size: var(--GT-font-size-lg);
+  font-weight: var(--GT-font-weight-light);
+  line-height: var(--GT-line-height-normal);
+  margin: 0;
 }

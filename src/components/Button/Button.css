@@ -1,89 +1,94 @@
 .btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.75rem;
+    font-family: var(--GT-font-family-base);
     padding: 0.6rem 1rem;
-    border-radius: var(--radius-md);
-    font-size: var(--font-size-md);
+    border-radius: var(--GT-radius-md);
+    font-size: var(--GT-font-size-md);
     cursor: pointer;
     overflow: visible;
     transition: background-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 .btn.primary {
-    background-color: var(--color-primary);
-    color: var(--color-primary-fg);
+    color: var(--GT-color-fg-primary);
+    background-color: var(--GT-color-bg-primary);
     border: none;
   }
   .btn.primary:hover {
-    background-color: var(--color-primary-hover);
-    box-shadow: var(--elevation-primary-md);
+    background-color: var(--GT-color-bg-primary-hover);
+    box-shadow: var(--GT-elevation-primary-md);
   }
   .btn.primary:focus {
-    box-shadow: var(--elevation-primary-md);
+    box-shadow: var(--GT-elevation-primary-md);
   }
   .btn.disabled.primary:hover {
-    color: var(--color-primary-fg);
-    background-color: var(--color-primary);
+    color: var(--GT-color-fg-primary);
+    background-color: var(--GT-color-bg-primary);
     box-shadow: none;
   }
 
 .btn.secondary {
-    background-color: var(--color-secondary);
-    color: var(--color-secondary-fg);
+    color: var(--GT-color-fg-secondary);
+    background-color: var(--GT-color-bg-secondary);
     border: none;
   }
   
   .btn.secondary:hover {
-    background-color: var(--color-secondary-hover);
-    box-shadow: var(--elevation-md);
+    background-color: var(--GT-color-bg-secondary-hover);
+    box-shadow: var(--GT-elevation-md);
   }
   
   .btn.secondary:focus {
-    box-shadow: var(--elevation-md);
+    box-shadow: var(--GT-elevation-md);
   }
   .btn.disabled.secondary:hover {
-    color: var(--color-secondary-fg);
-    background-color: var(--color-secondary);
+    color: var(--GT-color-fg-secondary);
+    background-color: var(--GT-color-bg-secondary);
     box-shadow: none;
   }
 
 .btn.tertiary {
-    background-color: var(--color-tertiary);
-    color: var(--color-tertiary-fg);
-    border: 1px solid var(--transparent300);
+    color: var(--GT-color-fg-tertiary);
+    background-color: var(--GT-color-bg-tertiary);
+    border: 1px solid var(--GT-color-border-medium);
   }
 
     .btn.tertiary:hover {
-        color: var(--color-tertiary-hover-fg);
-        background-color: var(--color-tertiary-hover);
-        box-shadow: var(--elevation-md);
+        color: var(--GT-color-fg-tertiary-hover);
+        background-color: var(--GT-color-bg-tertiary-hover);
+        box-shadow: var(--GT-elevation-md);
     }
 
     .btn.tertiary:focus {   
-        box-shadow: var(--elevation-md);
+        box-shadow: var(--GT-elevation-md);
     }
     .btn.disabled.tertiary:hover {
-        color: var(--color-tertiary-fg);
-        background-color: var(--color-tertiary);
+        color: var(--GT-color-fg-tertiary);
+        background-color: var(--GT-color-bg-tertiary);
         box-shadow: none;
     }
 
 .btn.transparent {
-    background-color: var(--color-transparent);
-    color: var(--color-transparent-fg);
+    color: var(--GT-color-fg-transparent);
+    background-color: var(--GT-color-bg-transparent);
     border: none;
   }
   
   .btn.transparent:hover {
-    color: var(--color-transparent-hover-fg);
-    background-color: var(--color-transparent-hover);
+    color: var(--GT-color-fg-transparent-hover);
+    background-color: var(--GT-color-bg-transparent-hover);
     box-shadow: var(--elevation-md);
   }
   .btn.disabled.transparent:hover {
-    color: var(--color-transparent-fg);
-    background-color: transparent;
+    color: var(--GT-color-fg-transparent);
+    background-color: var(--GT-color-bg-transparent);
     box-shadow: none;
   }
   
   .btn.transparent:focus {
-    box-shadow: var(--elevation-md);
+    box-shadow: var(--GT-elevation-md);
   }
 
 .btn.disabled {

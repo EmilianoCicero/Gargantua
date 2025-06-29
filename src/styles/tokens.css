@@ -1,95 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;500;600;700&display=swap');
+
 :root {
-    /* Primitives */
-    --blue300: #0033CC;
-    --blue400: #0039E5;
-    --blue500: #0040FF;
-    --blue600: #1A53FF;
-    --blue700: #3366FF;
+/* Primitives */
+--GT-white: #fff;
+--GT-dark: #0B0C0F;
 
-    --white: #fff;
-    --black: #121212;
+--GT-blue500: #0033CC;
+--GT-blue400: #0039E5;
+--GT-blue300: #0040FF; /* Default for Primary Actions */
+--GT-blue200: #1A53FF;
+--GT-blue100: #3366FF;
 
-    --transparent000: rgba(0, 0, 0, 0);
-    --transparent100:rgba(0, 0, 0, 0.05);
-    --transparent200: rgba(0, 0, 0, 0.1);
-    --transparent300: rgba(0, 0, 0, 0.15);
-    --transparent400: rgba(0,0,0, 0.6);
+--GT-dark500: #16171D;
+--GT-dark400: #21222B;
+--GT-dark300: #2C2D3A; /* Default for Main Texts */
+--GT-dark200: #373948;
+--GT-dark100: #424457;
 
-    /* Colors */
-    --color-mainbg: var(--white);
-    --color-text: var(--black);
+--GT-grey500: #585B74;
+--GT-grey400: #646682; /* Default for Secondary Texts */
+--GT-grey300: #6F7290;
+--GT-grey200: #7D809B;
+--GT-grey100: #8C8EA6;
 
-    --color-primary: var(--blue500);
-    --color-primary-hover: var(--blue600);
-    --color-primary-fg: var(--white);
-    --color-primary-hover-fg: var(--white);
+--GT-light500: #CCD0DB;
+--GT-light400: #D8DBE3;
+--GT-light300: #E4E6EC;
+--GT-light200: #F1F2F5;
+--GT-light100: #F6F7F9;
 
-    --color-secondary: var(--transparent100);
-    --color-secondary-hover: var(--transparent200);
-    --color-secondary-fg: var(--black);
-    --color-secondary-hover-fg: var(--black);
+--GT-transparent500: rgba(0, 0, 0, 0);
+--GT-transparent400:rgba(0, 0, 0, 0.05);
+--GT-transparent300: rgba(0, 0, 0, 0.1);
+--GT-transparent200: rgba(0, 0, 0, 0.15);
+--GT-transparent100: rgba(0,0,0, 0.6);
 
-    --color-tertiary: var(--transparent000);
-    --color-tertiary-hover: var(--transparent100);
-    --color-tertiary-fg: var(--transparent400);
-    --color-tertiary-hover-fg: var(--black);
+/* Colors */
+--GT-color-bg-layout-main: var(--GT-white);
+--GT-color-bg-layout-secondary: var(--GT-light200);
 
-    --color-transparent: var(--transparent000);
-    --color-transparent-hover: var(--transparent100);
-    --color-transparent-fg: var(--transparent400);
-    --color-transparent-hover-fg: var(--black);
+--GT-color-text-main: var(--GT-dark300);
+--GT-color-text-secondary: var(--GT-grey400);
+--GT-color-text-white: var(--GT-white);
 
-    /* Border Radius */
-    --radius-sm: 4px;
-    --radius-md: 8px;
-    --radius-lg: 16px;
-    
-    /* Spacing */
-    --space-xs: 4px;
-    --space-sm: 8px;
-    --space-md: 16px;
-    --space-lg: 24px;
-    --space-xl: 32px;
-    
-    /* Typography */
-    --font-base: 'DM Sans', sans-serif;
-    --font-heading: 'DM Sans', sans-serif;
-    --font-size-sm: 0.875rem;
-    --font-size-md: 1rem;
-    --font-size-lg: 1.25rem;
-    --font-size-xl: 2rem;
+--GT-color-bg-primary: var(--GT-blue300);
+--GT-color-bg-primary-hover: var(--GT-blue200);
+--GT-color-fg-primary: var(--GT-color-text-white);
+--GT-color-fg-primary-hover: var(--GT-color-text-white);
 
-    /* Elevation */
-    --elevation-primary-md: 0 8px 20px 4px rgba(0, 56, 224, 0.24);
-    --elevation-md: 0 8px 20px 4px rgba(0, 0, 0, 0.05);
+--GT-color-bg-secondary: var(--GT-light200);
+--GT-color-bg-secondary-hover: var(--GT-light300);
+--GT-color-fg-secondary: var(--GT-color-text-secondary);
+--GT-color-fg-secondary-hover: var(--GT-color-text-secondary);
+
+--GT-color-bg-tertiary: var(--GT-white);
+--GT-color-bg-tertiary-hover: var(--GT-light200);
+--GT-color-fg-tertiary: var(--GT-color-text-secondary);
+--GT-color-fg-tertiary-hover: var(--GT-color-text-secondary);
+
+--GT-color-bg-transparent: var(--GT-transparent500);
+--GT-color-bg-transparent-hover: var(--GT-transparent400);
+--GT-color-fg-transparent: var(--GT-color-text-secondary);
+--GT-color-fg-transparent-hover: var(--GT-color-text-secondary);
+
+--GT-color-border-soft: var(--GT-light200);
+--GT-color-border-medium: var(--GT-light300);
+--GT-color-border-hard: var(--GT-light400);
 }
 
-[data-theme="dark"] { /* Dark Theme */
-    --transparent000: rgba(255, 255, 255, 0);
-    --transparent100:rgba(255, 255, 255, 0.05);
-    --transparent200: rgba(255, 255, 255, 0.1);
-    --transparent300: rgba(255, 255, 255, 0.15);
-    --transparent400: rgba(255,255,255, 0.6);
-   
-    /* Colors */
-    --color-mainbg: var(--black);
-    --color-text: var(--white);
-  
-    --color-secondary: var(--transparent100);
-    --color-secondary-hover: var(--transparent200);
-    --color-secondary-fg: var(--white);
-    --color-secondary-hover-fg: var(--white);
+/* Dark Theme Overrides */
+[data-theme="dark"] {
+/* Primitives */
+--GT-transparent500: rgba(255, 255, 255, 0);
+--GT-transparent400:rgba(255, 255, 255, 0.05);
+--GT-transparent300: rgba(255, 255, 255, 0.1);
+--GT-transparent200: rgba(255, 255, 255, 0.15);
+--GT-transparent100: rgba(255,255,255, 0.6);
 
-    --color-tertiary: var(--transparent000);
-    --color-tertiary-hover: var(--transparent100);
-    --color-tertiary-fg: var(--transparent400);
-    --color-tertiary-hover-fg: var(--white);
+/* Colors */
+--GT-color-bg-layout-main: var(--GT-dark);
+--GT-color-bg-layout-secondary: var(--GT-dark500);
 
-    --color-transparent: var(--transparent000);
-    --color-transparent-hover: var(--transparent100);
-    --color-transparent-fg: var(--transparent400);
-    --color-transparent-hover-fg: var(--white);
+--GT-color-text-main: var(--GT-white);
+--GT-color-text-secondary: var(--GT-light500);
 
-    /* Elevation */
-    --elevation-md: 0 8px 20px 4px rgba(255, 255, 255, 0.05);
-  }
+--GT-color-bg-secondary: var(--GT-dark500);
+--GT-color-bg-secondary-hover: var(--GT-dark400);
+--GT-color-fg-secondary: var(--GT-color-text-secondary);
+--GT-color-fg-secondary-hover: var(--GT-color-text-secondary);
+
+--GT-color-bg-tertiary: var(--GT-dark500);
+--GT-color-bg-tertiary-hover: var(--GT-dark400);
+--GT-color-fg-tertiary: var(--GT-color-text-secondary);
+--GT-color-fg-tertiary-hover: var(--GT-color-text-secondary);
+
+--GT-color-bg-transparent: var(--GT-transparent500);
+--GT-color-bg-transparent-hover: var(--GT-transparent400);
+--GT-color-fg-transparent: var(--GT-color-text-secondary);
+--GT-color-fg-transparent-hover: var(--GT-color-text-secondary);
+
+--GT-color-border-soft: var(--GT-dark400);
+--GT-color-border-medium: var(--GT-dark300);
+--GT-color-border-hard: var(--GT-dark200);
+}
+
+/* Root Tokens */
+:root {
+/* Border Radius */
+--GT-radius-xs: 2px;
+--GT-radius-sm: 4px;
+--GT-radius-md: 8px;
+--GT-radius-lg: 16px;
+--GT-radius-xl: 24px;
+
+/* Spacing */
+--GT-space-xs: 4px;
+--GT-space-sm: 8px;
+--GT-space-md: 16px;
+--GT-space-lg: 24px;
+--GT-space-xl: 32px;
+
+/* Typography */
+--GT-font-family-base: 'Karla', system-ui, sans-serif;
+--GT-font-family-heading: 'Karla', system-ui, sans-serif;
+
+--GT-font-size-xs: 0.75rem;  /* 12px */
+--GT-font-size-sm: 0.875rem; /* 14px */
+--GT-font-size-md: 1rem;     /* 16px */
+--GT-font-size-lg: 1.25rem;  /* 20px */
+--GT-font-size-xl: 1.5rem;   /* 24px */
+--GT-font-size-xxl: 2rem;    /* 32px */
+
+--GT-font-weight-light: 300;
+--GT-font-weight-medium: 500;
+--GT-font-weight-bold: 700;
+
+--GT-line-height-tight: 1.25;
+--GT-line-height-normal: 1.5;
+--GT-line-height-loose: 1.75;
+
+/* Elevation */
+--GT-elevation-primary-md: 0 8px 20px 4px rgba(0, 56, 224, 0.24);
+--GT-elevation-md: 0 8px 20px 4px rgba(0, 0, 0, 0.05);
+}
