@@ -3,3 +3,9 @@
   margin: 0 auto;
   padding: 2rem;
 }
+.btn-theme {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  z-index: 1000;
+}

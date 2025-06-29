@@ -36,6 +36,19 @@ function App() {
 <Button variant="transparent"><i data-feather="camera"></i></Button>
 <Button variant="transparent"><i data-feather="more-vertical"></i></Button>
       </Card>
+      <Card
+  title="Join the Community" paragraph="Connect with like-minded individuals and share your journey.">
+<Button variant="transparent"><i data-feather="feather"></i></Button>
+<Button variant="transparent"><i data-feather="smile"></i></Button>
+<Button variant="transparent"><i data-feather="camera"></i></Button>
+<Button variant="transparent"><i data-feather="more-vertical"></i></Button>
+      </Card>
+      <Card>
+<Button variant="transparent"><i data-feather="feather"></i></Button>
+<Button variant="transparent"><i data-feather="smile"></i></Button>
+<Button variant="transparent"><i data-feather="camera"></i></Button>
+<Button variant="transparent"><i data-feather="more-vertical"></i></Button>
+      </Card>
       <Button variant="primary">Primary Garg</Button>
       <Button variant="primary"><i data-feather="feather"></i>Primary Garg<i data-feather="smile"></i></Button>
       <Button variant="primary"><i data-feather="feather"></i></Button>
