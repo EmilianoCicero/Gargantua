@@ -35,7 +35,7 @@
 --GT-transparent200: rgba(0, 0, 0, 0.15);
 --GT-transparent100: rgba(0,0,0, 0.6);
 
---GT-navbar-color-bg: rgba(241, 242, 245, 0.8);
+--GT-color-bg-glass: rgba(241, 242, 245, 0.8);
 
 /* Colors */
 --GT-color-bg-layout-main: var(--GT-white);
@@ -79,7 +79,7 @@
 --GT-transparent200: rgba(255, 255, 255, 0.15);
 --GT-transparent100: rgba(255,255,255, 0.6);
 
---GT-navbar-color-bg: rgba(11, 12, 15, 0.8);
+--GT-color-bg-glass: rgba(11, 12, 15, 0.8);
 
 /* Colors */
 --GT-color-bg-layout-main: var(--GT-dark);

@@ -1,5 +1,6 @@
 .dropdown {
     position: relative;
+    overflow: visible;
   }
   
   .dropdown-toggle {
@@ -15,16 +16,16 @@
     color: var(--GT-color-fg-secondary);
   }
   .dropdown-toggle:hover {
-    background-color: var(--GT-color-bg-secondary-hover);
+    background-color: var(--GT-transparent400);
     border-radius: var(--GT-radius-xl);
   }
   
   .dropdown-menu {
     position: absolute;
-    top: 120%;
+    top: 180%;
     right: 0;
     background-color: var(--GT-color-bg-secondary);
-    border: 1px solid var(--GT-color-border-hard);
+    border: 1px solid var(--GT-color-border-medium);
     border-radius: var(--GT-radius-lg);
     box-shadow: var(--GT-elevation-lg);
     padding: 12px;
@@ -32,7 +33,9 @@
     flex-direction: column;
     gap: 8px;
     min-width: 168px;
-    z-index: 10;
+    -webkit-backdrop-filter: blur(24px);
+    backdrop-filter: blur(24px);
+    z-index: 1000;
   }
   
   .dropdown-item {
@@ -44,5 +47,5 @@
   }
   
   .dropdown-item:hover {
-    background-color: var(--GT-color-bg-secondary-hover);
+    background-color: var(--GT-transparent400);
   }

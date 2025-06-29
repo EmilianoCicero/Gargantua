@@ -1,5 +1,4 @@
 import React, { useState, useRef, useEffect } from 'react';
-import useFeather from '../../hooks/useFeatherIcons';
 import './DropdownMenu.css';
 
 function DropdownMenu({ icon = 'more-vertical', iconRight, children }) {

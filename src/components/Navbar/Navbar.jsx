@@ -1,6 +1,5 @@
 import React from 'react';
 import './Navbar.css'; 
-import Button from '../Button/Button';
 import useFeather from '../../hooks/useFeatherIcons';
 import DropdownMenu from '../DropdownMenu/DropdownMenu';
 import { Link } from 'react-router-dom';

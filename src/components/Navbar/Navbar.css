@@ -7,13 +7,14 @@
     flex-direction: row;
     align-items: center;
   gap: 160px;
-  background-color: var(--GT-navbar-color-bg);
+  background-color: var(--GT-color-bg-glass);
   padding: 8px 40px;
   border-radius: 100px;
   border: 1px solid var(--GT-color-border-soft);
   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
   z-index: 1000;
-  backdrop-filter: blur(20px); /* Optional: nice modern touch */
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
 }
 .links-wrapper {
   display: flex;
@@ -31,7 +32,7 @@ border-radius: var(--GT-radius-xl);
 text-decoration: none;
 }
 .navbar-link:hover {
-  background-color: var(--GT-color-bg-secondary-hover);
+  background-color: var(--GT-transparent400);
 }
 .navbar-logo {
   display: flex;
