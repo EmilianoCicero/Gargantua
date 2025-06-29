@@ -17,7 +17,6 @@ height: auto;
 border-radius: var(--GT-radius-lg);
 object-fit: cover;
 display: block;
-vertical-align: middle;
 }
 .card:hover {
 transform: scale(1.05);

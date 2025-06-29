@@ -1,8 +1,10 @@
 import React from 'react';
 import Button from '../components/Button';
 import Container from '../layouts/Container';
+import useFeather from '../hooks/useFeatherIcons';
 
 const ButtonPage = () => {
+    useFeather();
   return (
     <Container>
       <h1>Button</h1>

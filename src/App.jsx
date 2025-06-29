@@ -4,6 +4,7 @@ import Container from './layouts/Container';
 import Card from './components/Card';
 import useFeather from './hooks/useFeatherIcons';
 import './styles/tokens.css';
+import Navbar from './components/Navbar';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -21,11 +22,12 @@ function App() {
 
   return (
     <>
+      <Navbar />
       <Button variant="transparent" onClick={toggleTheme}>Change Theme</Button>
       <Container>
       <h1>Welcome to Gargantua</h1>
       <p>Bend time and space with Gargantua. Build faster. Launch sooner. Reach Further.</p>
-      <Card
+      <Card 
   image="https://images.unsplash.com/photo-1750688651440-6e485ae16bc8?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 />
       <Card title="Explore the Universe" paragraph="Discover the vastness of space with our cutting-edge tools and resources."
