@@ -24,9 +24,14 @@
 .navbar-link {
 display: flex;
 flex-direction: row;
+padding: 12px 16px;
 gap: 12px;
 color: var(--GT-color-fg-secondary);
+border-radius: var(--GT-radius-xl);
 text-decoration: none;
+}
+.navbar-link:hover {
+  background-color: var(--GT-color-bg-secondary-hover);
 }
 .navbar-logo {
   display: flex;
