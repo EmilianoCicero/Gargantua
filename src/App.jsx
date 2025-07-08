@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import Button from './components/Button';
 import Container from './layouts/Container';
 import Card from './components/Card';
@@ -6,25 +6,15 @@ import useFeather from './hooks/useFeatherIcons';
 import './styles/tokens.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
+import { useTheme } from './main';
 
 function App() {
-  const [theme, setTheme] = useState('light');
-
-  useEffect(() => {
-    // Set the data-theme attribute on the HTML element directly
-    document.documentElement.setAttribute('data-theme', theme);
-  }, [theme]);
-
   useFeather();
-
-  const toggleTheme = () => {
-    setTheme(prev => (prev === 'light' ? 'dark' : 'light'));
-  };
+  const { toggleTheme } = useTheme();
 
   return (
     <>
-      <Navbar />
-      <Button variant="transparent" onClick={toggleTheme}>Change Theme</Button>
+      <Navbar toggleTheme={toggleTheme} />
       <Container>
       <Hero />
       <Card 

@@ -4,12 +4,14 @@ import Button from '../components/Button';
 import Container from '../layouts/Container';
 import useFeather from '../hooks/useFeatherIcons';
 import Navbar from '../components/Navbar/Navbar';
+import { useTheme } from '../main';
 
 const CardPage = () => {
     useFeather();
+    const { toggleTheme } = useTheme();
   return (
     <>
-    <Navbar />
+    <Navbar toggleTheme={toggleTheme} />
     <Container>
       <h1>Card</h1>
       <h2>Variants:</h2>
