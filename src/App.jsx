@@ -5,6 +5,7 @@ import Card from './components/Card';
 import useFeather from './hooks/useFeatherIcons';
 import './styles/tokens.css';
 import Navbar from './components/Navbar';
+import Hero from './components/Hero';
 
 function App() {
   const [theme, setTheme] = useState('light');
@@ -25,8 +26,7 @@ function App() {
       <Navbar />
       <Button variant="transparent" onClick={toggleTheme}>Change Theme</Button>
       <Container>
-      <h1>Welcome to Gargantua</h1>
-      <p>Bend time and space with Gargantua. Build faster. Launch sooner. Reach Further.</p>
+      <Hero />
       <Card 
   image="https://images.unsplash.com/photo-1750688651440-6e485ae16bc8?q=80&w=1587&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
 />

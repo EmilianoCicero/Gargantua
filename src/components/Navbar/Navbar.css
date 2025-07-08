@@ -10,7 +10,7 @@
   background-color: var(--GT-color-bg-glass);
   padding: 8px 40px;
   border-radius: 100px;
-  border: 1px solid var(--GT-color-border-soft);
+  border: 1px solid var(--GT-color-border-medium);
   box-shadow: 0 16px 32px rgba(0, 0, 0, 0.12);
   z-index: 1000;
   -webkit-backdrop-filter: blur(24px);
@@ -30,6 +30,7 @@ gap: 12px;
 color: var(--GT-color-fg-secondary);
 border-radius: var(--GT-radius-xl);
 text-decoration: none;
+transition: background-color 0.2s ease-in-out;
 }
 .navbar-link:hover {
   background-color: var(--GT-transparent400);

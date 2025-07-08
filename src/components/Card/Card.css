@@ -14,7 +14,7 @@ border: 1px solid var(--GT-color-border-soft);
 .card-image {
 width: 100%;
 height: auto;
-border-radius: var(--GT-radius-lg);
+border-radius: var(--GT-radius-md);
 object-fit: cover;
 display: block;
 }

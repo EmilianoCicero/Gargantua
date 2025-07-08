@@ -14,8 +14,8 @@ function Navbar() {
         <Link to="/button" className="dropdown-item">Button</Link>
         <Link to="/card" className="dropdown-item">Card</Link>
       </DropdownMenu>
-      <Link to="/" className="navbar-link"><i data-feather="user" /> About</Link>
-      <Link to="/" className="navbar-link"><i data-feather="github" /> Github</Link>
+      <Link to="/about" className="navbar-link"><i data-feather="user" /> About</Link>
+      <Link to="https://github.com/EmilianoCicero/Gargantua" target="_blank" className="navbar-link"><i data-feather="github" /> Github</Link>
       </div>
     </nav>
   );

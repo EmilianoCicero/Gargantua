@@ -2,10 +2,13 @@ import React from 'react';
 import Button from '../components/Button';
 import Container from '../layouts/Container';
 import useFeather from '../hooks/useFeatherIcons';
+import Navbar from '../components/Navbar/Navbar';
 
 const ButtonPage = () => {
     useFeather();
   return (
+    <>
+    <Navbar />
     <Container>
       <h1>Button</h1>
       <h2>Variants:</h2>
@@ -25,6 +28,7 @@ const ButtonPage = () => {
       <Button variant="tertiary" disabled>Tertiary</Button>
       <Button variant="transparent" disabled>Transparent</Button>
     </Container>
+    </>
   );
 };
 

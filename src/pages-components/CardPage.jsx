@@ -3,10 +3,13 @@ import Card from '../components/Card';
 import Button from '../components/Button';
 import Container from '../layouts/Container';
 import useFeather from '../hooks/useFeatherIcons';
+import Navbar from '../components/Navbar/Navbar';
 
 const CardPage = () => {
     useFeather();
   return (
+    <>
+    <Navbar />
     <Container>
       <h1>Card</h1>
       <h2>Variants:</h2>
@@ -39,6 +42,7 @@ const CardPage = () => {
         <Button variant="transparent"><i data-feather="more-vertical"></i></Button>
       </Card>
     </Container>
+    </>
   );
   
 };

@@ -1,0 +1,29 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 4rem 1rem;
+  background: none;
+  border-radius: 1rem;
+  margin: 2rem 0;
+}
+
+.hero h1 {
+  font-size: var(--GT-font-size-xxl);
+  margin-bottom: var(--GT-space-md);
+  color: var(--GT-color-text-main);
+}
+
+.hero p {
+  font-size: var(--GT-font-size-lg);
+  margin-bottom: var(--GT-space-md);
+  color: var(--GT-color-text-secondary);
+  text-align: center;
+}
+
+.hero-buttons {
+  display: flex;
+  flex-direction: row;
+  gap: var(--GT-space-md);
+}
